@@ -1,0 +1,25 @@
+{
+  "name": "video-list-scraper",
+  "version": "0.0.0",
+  "description": "A tool to scrape IMDB list content",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha",
+    "coverage": "istanbul cover node_modules/.bin/_mocha -- -- -u exports -R spec test/**/*"
+  },
+  "author": "Derek Keeler",
+  "license": "ISC",
+  "dependencies": {
+    "jsdom": "^9.8.3",
+    "pg": "^6.1.0",
+    "pg-hstore": "^2.3.2",
+    "request": "^2.78.0",
+    "sequelize": "^3.24.8",
+    "winston": "^2.3.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.1.2"
+  }
+}
